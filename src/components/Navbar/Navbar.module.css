@@ -7,18 +7,17 @@
 .inactiveNav {
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.15) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
 
 @media screen and (max-width: 960px) {
   .clickedNav {
-    background: #fff;
+    background: #070707;
   }
 
   .unclickedNav {
     background: transparent;
-    transition: 0.8s all ease;
   }
 }

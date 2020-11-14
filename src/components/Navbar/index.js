@@ -44,23 +44,20 @@ export default function Navbar() {
           >
             <Link
               name="navbarLogo"
-              className={`text-black justify-self-start cursor-pointer no-underline text-2xl flex items-center`}
+              className={`text-main-text justify-self-start cursor-pointer no-underline text-2xl flex items-center`}
               to="/"
-            >
-              <DiReact name="navIcon" className={`mt-0 mr-2 mb-0 ml-8`} />
-              PORTFOLIO
-            </Link>
+            ></Link>
             <div
               name="mobileIcon"
-              className={`block absolute top-0 right-0 mt-4 mr-8 transform text-3xl cursor-pointer lg:hidden z-40`}
+              className={` block absolute top-0 right-0 mt-4 mr-8 transform text-3xl cursor-pointer lg:hidden z-40`}
               onClick={handleClick}
             >
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul
               name="navMenu"
-              className={` flex flex-col w-full h-almostscreen absolute opacity-100 transition ease-out duration-500 bg-white left-0 
-                                lg:flex-row lg:w-auto lg:h-auto lg:relative lg:bg-none lg:text-center lg:list-none lg:items-center 
+              className={` flex flex-col w-full h-almostscreen absolute opacity-100  left-0 bg-main-background
+                                lg:flex-row lg:w-auto lg:h-auto lg:relative lg:text-center lg:list-none lg:items-center lg:bg-transparent 
               ${click ? `top-100` : `top-negative lg:top-100`} `}
               onClick={handleClick}
               click={click}
@@ -71,7 +68,7 @@ export default function Navbar() {
                   className={`nav-link lg:nav-link-lg`}
                   to="/"
                 >
-                  Home
+                  About Me
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -80,7 +77,7 @@ export default function Navbar() {
                   className={`nav-link lg:nav-link-lg`}
                   to="/images"
                 >
-                  Images
+                  Skills
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -89,7 +86,25 @@ export default function Navbar() {
                   className={`nav-link lg:nav-link-lg`}
                   to="/destinations"
                 >
-                  Destinations
+                  Projects
+                </Link>
+              </div>
+              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+                <Link
+                  name="navLinks"
+                  className={`nav-link lg:nav-link-lg`}
+                  to="/destinations"
+                >
+                  Testimonials
+                </Link>
+              </div>
+              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+                <Link
+                  name="navLinks"
+                  className={`nav-link lg:nav-link-lg`}
+                  to="/destinations"
+                >
+                  Contact
                 </Link>
               </div>
             </ul>

@@ -2,22 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-link {
-  @apply text-black text-center p-8 w-full table;
+body {
+  @apply bg-main-background;
 }
 
-.nav-link:hover {
-  @apply text-gray-500 transition ease-out duration-500;
+a,
+p,
+h1,
+h2 {
+  @apply text-main-text;
 }
 
-.nav-link-lg {
-  @apply text-black flex items-center no-underline px-2 py-4 h-full;
-}
+@layer utilities {
+  @responsive {
+    .nav-link {
+      @apply text-main-text text-center p-8 w-full table uppercase;
+    }
 
-.nav-menu {
-  @apply flex flex-col w-full h-almostscreen absolute opacity-100 transition ease-out duration-500 bg-white;
-}
+    .nav-link:hover {
+      @apply border-b-2 border-primary;
+    }
 
-.nav-menu-lg {
-  @apply flex-row w-auto h-auto relative bg-none text-center list-none items-center;
+    .nav-link-lg {
+      @apply text-main-text flex items-center no-underline px-6 pt-4 pb-1 h-full;
+    }
+  }
 }
