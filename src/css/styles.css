@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+  @apply text-black text-center p-8 w-full table;
+}
+
+.nav-link:hover {
+  @apply text-gray-500 transition ease-out duration-500;
+}
+
+.nav-link-lg {
+  @apply text-black flex items-center no-underline px-2 py-4 h-full;
+}
+
+.nav-menu {
+  @apply flex flex-col w-full h-almostscreen absolute opacity-100 transition ease-out duration-500 bg-white;
+}
+
+.nav-menu-lg {
+  @apply flex-row w-auto h-auto relative bg-none text-center list-none items-center;
+}

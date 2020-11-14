@@ -33,37 +33,62 @@ export default function Navbar() {
     <>
       <IconContext.Provider value={{ color: "141414" }}>
         <nav
-          className={`${styles.nav} 
+          id="nav"
+          className={`flex justify-center items-center text-base sticky top-0 z-50
           ${click ? styles.clickedNav : styles.unclickedNav}
           ${scroll ? styles.activeNav : styles.inactiveNav}  `}
         >
-          <div className={styles.navbarContainer}>
-            <Link className={styles.navbarLogo} to="/">
-              <DiReact className={styles.navIcon} />
-              MYSITE
+          <div
+            name="navbarContainer"
+            className={`flex justify-between z-10 w-full max-w-screen-xl p-4 lg:p-1`}
+          >
+            <Link
+              name="navbarLogo"
+              className={`text-black justify-self-start cursor-pointer no-underline text-2xl flex items-center`}
+              to="/"
+            >
+              <DiReact name="navIcon" className={`mt-0 mr-2 mb-0 ml-8`} />
+              PORTFOLIO
             </Link>
-            <div className={styles.mobileIcon} onClick={handleClick}>
+            <div
+              name="mobileIcon"
+              className={`block absolute top-0 right-0 mt-4 mr-8 transform text-3xl cursor-pointer lg:hidden z-40`}
+              onClick={handleClick}
+            >
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul
-              className={`${styles.navMenu} ${
-                click ? styles.navMenuDisplayed : styles.navMenuHidden
-              }`}
+              name="navMenu"
+              className={` flex flex-col w-full h-almostscreen absolute opacity-100 transition ease-out duration-500 bg-white left-0 
+                                lg:flex-row lg:w-auto lg:h-auto lg:relative lg:bg-none lg:text-center lg:list-none lg:items-center 
+              ${click ? `top-100` : `top-negative lg:top-100`} `}
               onClick={handleClick}
               click={click}
             >
-              <div className={styles.navItem}>
-                <Link className={styles.navLinks} to="/">
+              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+                <Link
+                  name="navLinks"
+                  className={`nav-link lg:nav-link-lg`}
+                  to="/"
+                >
                   Home
                 </Link>
               </div>
-              <div className={styles.navItem}>
-                <Link className={styles.navLinks} to="/images">
+              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+                <Link
+                  name="navLinks"
+                  className={`nav-link lg:nav-link-lg`}
+                  to="/images"
+                >
                   Images
                 </Link>
               </div>
-              <div className={styles.navItem}>
-                <Link className={styles.navLinks} to="/destinations">
+              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+                <Link
+                  name="navLinks"
+                  className={`nav-link lg:nav-link-lg`}
+                  to="/destinations"
+                >
                   Destinations
                 </Link>
               </div>

@@ -5,7 +5,15 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      height: theme => ({
+        almostscreen: "90vh",
+      }),
+      inset: {
+        100: "100%",
+        negative: "-1000px",
+      },
+    },
   },
   variants: {},
   plugins: [],
