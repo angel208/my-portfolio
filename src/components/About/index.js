@@ -10,7 +10,7 @@ import {
 export default function About() {
   return (
     <div
-      className={`banner-main-background lg:banner-background-lg h-screen w-full flex flex-col justify-center items-center object-fill -mt-24`}
+      className={`background-transparent h-screen w-full flex justify-center items-center object-fill`}
     ></div>
   )
 }
