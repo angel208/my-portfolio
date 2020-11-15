@@ -54,7 +54,7 @@ h2 {
     }
 
     .btn:hover {
-      @apply bg-primary transition ease-linear duration-200 border-2 border-primary;
+      @apply bg-primary transition ease-linear duration-200 border-2 border-primary transform scale-110;
     }
 
     @screen lg {
