@@ -13,6 +13,16 @@ h2 {
   @apply text-main-text;
 }
 
+.social-icon {
+  @apply text-4xl mx-3;
+}
+
+@screen lg {
+  .social-icon {
+    @apply mx-8 my-4;
+  }
+}
+
 @layer utilities {
   @responsive {
     .nav-link {
@@ -25,6 +35,40 @@ h2 {
 
     .nav-link-lg {
       @apply text-main-text flex items-center no-underline px-6 pt-4 pb-1 h-full;
+    }
+
+    .banner-background-lg {
+      background: url("../images/banner-profile-pic.png");
+      background-position: right bottom; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: 40%;
+      @apply bg-banner;
+    }
+
+    .banner-background {
+      @apply bg-banner;
+    }
+
+    .btn {
+      @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer;
+    }
+
+    .btn:hover {
+      @apply bg-primary transition ease-linear duration-200 border-2 border-primary;
+    }
+
+    @screen lg {
+      .btn {
+        @apply w-64;
+      }
+    }
+
+    .btn-primary {
+      @apply bg-primary border-2 border-primary;
+    }
+
+    .btn-primary:hover {
+      @apply border-solid border-2 border-main-text bg-transparent transition ease-linear duration-200;
     }
   }
 }

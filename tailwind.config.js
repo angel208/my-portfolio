@@ -22,6 +22,10 @@ module.exports = {
         secondary: "#FE0000",
         banner: "#202731",
       },
+      backgroundImage: theme => ({
+        "angel-profile-pic": "url('/images/banner-profile-pic.png')",
+        "test-img": "url('/images/background2.jpg')",
+      }),
     },
   },
   variants: {},
