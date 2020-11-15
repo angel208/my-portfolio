@@ -17,6 +17,10 @@ h2 {
   @apply text-4xl mx-3;
 }
 
+.social-icon:hover {
+  @apply transform scale-110 transition-all ease-in duration-200;
+}
+
 @screen lg {
   .social-icon {
     @apply mx-8 my-4;
@@ -70,5 +74,64 @@ h2 {
     .btn-primary:hover {
       @apply border-solid border-2 border-main-text bg-transparent transition ease-linear duration-200;
     }
+  }
+}
+
+/*skills*/
+.skill-card {
+  @apply w-full h-full bg-secondary-background  px-4  py-4 text-center flex flex-col items-center justify-evenly;
+}
+
+.skill-card h2 {
+  @apply text-main-text text-xl;
+}
+
+.skill-card p {
+  @apply text-secondary-text text-sm;
+}
+
+@screen lg {
+  .skill-card {
+    @apply px-8  py-8;
+  }
+
+  .skill-card h2 {
+    @apply text-2xl;
+  }
+
+  .skill-card p {
+    @apply text-base;
+  }
+}
+
+.grid-card-container {
+  @apply grid w-8/10 h-70vh p-12 pt-20   gap-5;
+}
+
+@screen md {
+  .grid-card-container {
+    @apply grid-cols-2;
+  }
+}
+
+@screen lg {
+  .grid-card-container {
+    @apply h-80vh grid-cols-3 gap-10;
+  }
+}
+
+@screen xl {
+  .grid-card-container {
+    @apply w-7/10 h-80vh;
+  }
+}
+
+.card-icon {
+  @apply text-lg w-16  h-auto text-primary;
+}
+
+@screen lg {
+  .card-icon {
+    @apply w-20;
   }
 }
