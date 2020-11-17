@@ -52,7 +52,11 @@ export default function Navbar() {
               className={` block absolute top-0 right-0 mt-4 mr-8 transform text-3xl cursor-pointer lg:hidden z-40`}
               onClick={handleClick}
             >
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? (
+                <FaTimes className="menu-icon text-main-text" />
+              ) : (
+                <FaBars className="menu-icon text-main-text" />
+              )}
             </div>
             <ul
               name="navMenu"

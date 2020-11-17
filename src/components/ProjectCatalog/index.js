@@ -7,7 +7,7 @@ import {
   FaGithub,
 } from "react-icons/fa"
 
-export default function Projects() {
+export default function ProjectCatalog() {
   return (
     <div
       className={`background-transparent h-screen w-full flex justify-center items-center object-fill`}

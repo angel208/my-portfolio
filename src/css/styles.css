@@ -83,7 +83,7 @@ h2 {
 }
 
 .skill-card h2 {
-  @apply text-main-text text-xl;
+  @apply text-main-text text-xl  mb-3;
 }
 
 .skill-card p {
@@ -127,7 +127,7 @@ h2 {
 }
 
 .card-icon {
-  @apply text-lg w-16  h-auto text-primary;
+  @apply text-lg w-16  h-auto text-primary mb-3;
 }
 
 @screen lg {
