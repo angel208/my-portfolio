@@ -21,6 +21,8 @@ module.exports = {
       },
       inset: {
         100: "100%",
+        80: "80%",
+        70: "70%",
         negative: "-1000px",
       },
       colors: {

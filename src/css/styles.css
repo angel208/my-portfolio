@@ -135,3 +135,26 @@ h2 {
     @apply w-20;
   }
 }
+
+/* projects */
+.post-summary {
+  @apply pt-3 pl-3 top-70 h-full w-full absolute left-0 bg-black opacity-75 z-30 transition-all duration-500 flex flex-col justify-start items-start;
+}
+
+.post-summary h2 {
+  @apply font-bold text-primary text-lg  transform  transition-all ease-in duration-200 w-full;
+}
+
+@screen lg {
+  .post-summary {
+    @apply top-100;
+  }
+
+  .post-summary h2 {
+    @apply text-main-text;
+  }
+}
+
+.post-item:hover .post-summary {
+  @apply justify-center items-center top-0 text-center pt-0 pl-0;
+}

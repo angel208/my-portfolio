@@ -2,7 +2,8 @@
 slug: "/projects/nova-watches"
 date: "2019-05-04"
 title: "Nova Watches"
-featuredImage: ../../images/img-2.jpg
+description: "Ecommerce made in Woocommerce"
+featuredImage: ./featured.jpg
 ---
 
 # Hic est manus fata marito constitit erit

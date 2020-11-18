@@ -2,6 +2,7 @@
 slug: "/projects/explor"
 date: "2019-05-04"
 title: "Explor"
+description: "Travel site made in gatsby"
 featuredImage: ./featured.jpg
 ---
 

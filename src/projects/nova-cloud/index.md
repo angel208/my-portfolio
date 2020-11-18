@@ -2,7 +2,8 @@
 slug: "/projects/nova-cloud"
 date: "2019-05-04"
 title: "Nova Cloud"
-featuredImage: ../../images/img-2.jpg
+description: "Cloud based drive made in python and AWS"
+featuredImage: ./featured.jpg
 ---
 
 # Hic est manus fata marito constitit erit
