@@ -158,3 +158,18 @@ h2 {
 .post-item:hover .post-summary {
   @apply justify-center items-center top-0 text-center pt-0 pl-0;
 }
+
+/* footer */
+.footer-social-icon {
+  @apply text-xl mx-3;
+}
+
+.footer-social-icon:hover {
+  @apply transform scale-110 transition-all ease-in duration-200;
+}
+
+@screen lg {
+  .footer-social-icon {
+    @apply mx-6 my-4 text-2xl;
+  }
+}

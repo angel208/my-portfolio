@@ -14,7 +14,6 @@ const IndexPage = () => (
     <About />
     <Skills />
     <ProjectCatalog />
-    <h1 className="text-secondary-text">Hello world</h1>
   </Layout>
 )
 
