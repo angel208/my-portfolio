@@ -10,12 +10,15 @@ import {
 export default function Skills() {
   return (
     <div
-      className={`background-transparent h-auto w-full pt-4 pb-56 flex flex-col justify-center items-center object-fill`}
+      className={`background-transparent h-auto w-full py-8 lg:pt-0 lg:pb-16 flex flex-col justify-center items-center object-fill`}
     >
       <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-24 text-center text-4xl border-t border-primary">
         Skills
       </h1>
-      <div name="GridCardContainer" className="grid-card-container">
+      <div
+        name="GridCardContainer"
+        className="grid-card-container  h-screen lg:h-80vh"
+      >
         <div className="skill-card">
           <FaPython className="card-icon" />
           <h2>Back-End Developer</h2>

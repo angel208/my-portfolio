@@ -40,14 +40,17 @@ export default function ProjectCatalog() {
       <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-40 text-center text-4xl border-t border-primary">
         Projects
       </h1>
-      <div name="GridCardContainer" className="grid-card-container">
+      <div
+        name="GridCardContainer"
+        className="grid-card-container h-auto lg:h-auto"
+      >
         {data.allMarkdownRemark.edges.map(edge => (
           <Link
             className="post-item relative overflow-hidden h-64"
             to={edge.node.frontmatter.slug}
           >
-            <div className="pt-3 pl-3 post-summary top-70 lg:top-100 h-full w-full absolute left-0 bg-black opacity-75 z-30 transition-all ease duration-500 flex flex-col justify-start items-start">
-              <h2 className="font-bold text-primary lg:text-main-text text-lg hover:text-primary transform hover:scale-110 transition-all ease-in duration-200 w-full ">
+            <div className="post-summary">
+              <h2 className="hover:text-primary hover:scale-110">
                 {edge.node.frontmatter.title}
               </h2>
               <p className="font-light">{edge.node.frontmatter.description}</p>
@@ -57,6 +60,9 @@ export default function ProjectCatalog() {
             />
           </Link>
         ))}
+      </div>
+      <div className="w-8/10 px-12 lg:w-auto">
+        <button className="btn btn-primary">All Projects</button>
       </div>
     </div>
   )

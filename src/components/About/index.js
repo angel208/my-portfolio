@@ -17,7 +17,7 @@ export default function About() {
 
   return (
     <div
-      className={`background-transparent h-screen w-full flex flex-col justify-center items-center object-fill px-32 xl:px-64
+      className={`background-transparent h-auto py-20 lg:py-40 w-full flex flex-col justify-center items-center object-fill px-32 xl:px-64
                   lg:flex-row`}
     >
       <h1 className="text-4xl text-center block mb-5 lg:hidden ">About me</h1>

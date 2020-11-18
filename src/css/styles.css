@@ -52,29 +52,29 @@ h2 {
     .banner-background {
       @apply bg-banner;
     }
-
-    .btn {
-      @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer;
-    }
-
-    .btn:hover {
-      @apply bg-primary transition ease-linear duration-200 border-2 border-primary transform scale-110;
-    }
-
-    @screen lg {
-      .btn {
-        @apply w-64;
-      }
-    }
-
-    .btn-primary {
-      @apply bg-primary border-2 border-primary;
-    }
-
-    .btn-primary:hover {
-      @apply border-solid border-2 border-main-text bg-transparent transition ease-linear duration-200;
-    }
   }
+}
+
+.btn {
+  @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer;
+}
+
+.btn:hover {
+  @apply bg-primary transition ease-linear duration-200 border-2 border-primary transform scale-110;
+}
+
+@screen lg {
+  .btn {
+    @apply w-64;
+  }
+}
+
+.btn-primary {
+  @apply bg-primary border-2 border-primary;
+}
+
+.btn-primary:hover {
+  @apply border-solid border-2 border-main-text bg-transparent transition ease-linear duration-200;
 }
 
 /*skills*/
@@ -105,7 +105,7 @@ h2 {
 }
 
 .grid-card-container {
-  @apply grid w-8/10 h-70vh p-12 pt-20   gap-5;
+  @apply grid w-8/10  p-12 pt-20   gap-5;
 }
 
 @screen md {
@@ -116,7 +116,7 @@ h2 {
 
 @screen lg {
   .grid-card-container {
-    @apply h-80vh grid-cols-3 gap-10;
+    @apply grid-cols-3 gap-10;
   }
 }
 
