@@ -17,10 +17,12 @@ export default function About() {
 
   return (
     <div
-      className={`background-transparent h-auto py-20 lg:py-40 w-full flex flex-col justify-center items-center object-fill px-32 xl:px-64
+      className={`background-transparent h-auto py-20 lg:py-40 w-full flex flex-col justify-center items-center object-fill px-8 sm:px-32 xl:px-64
                   lg:flex-row`}
     >
-      <h1 className="text-4xl text-center block mb-5 lg:hidden ">About me</h1>
+      <h1 className="text-3xl w-8/10 sm:text-4xl text-center block mb-5 lg:hidden ">
+        About me
+      </h1>
       <div name="Portrait" className="mb-6 lg:mb-0">
         <Img fixed={image.file.childImageSharp.fixed} />
       </div>

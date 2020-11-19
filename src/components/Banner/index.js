@@ -35,7 +35,9 @@ export default function Banner() {
           </span>
         </div>
         <div name="Hero" className="p-6 lg:pl-12">
-          <h1 className="text-6xl uppercase">Angel Peña</h1>
+          <h1 className="text-4xl sm:text-6xl uppercase text-center md:text-left">
+            Angel Peña
+          </h1>
           <p className=" text-secondary-text  text-center lg:text-left lg:text-2xl">
             SW Engineer / Backend Dev / Cloud Arch
           </p>
