@@ -10,6 +10,7 @@ import {
 export default function Contact() {
   return (
     <div
+      id="contact-section"
       className={` h-auto w-full px-20 py-24 lg:py-32 xl:px-64 flex flex-col-reverse lg:flex-row`}
     >
       <div

@@ -17,6 +17,7 @@ export default function About() {
 
   return (
     <div
+      id="about-section"
       className={`background-transparent h-auto py-20 lg:py-40 w-full flex flex-col justify-center items-center object-fill px-8 sm:px-32 xl:px-64
                   lg:flex-row`}
     >

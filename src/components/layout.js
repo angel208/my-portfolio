@@ -13,6 +13,11 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

@@ -70,7 +70,7 @@ export default function Navbar() {
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
-                  to="/"
+                  to="/#about-section"
                 >
                   About Me
                 </Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
-                  to="/images"
+                  to="/#skills-section"
                 >
                   Skills
                 </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
-                  to="/destinations"
+                  to="/#projects-section"
                 >
                   Projects
                 </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
-                  to="/destinations"
+                  to="/#testimonials-section"
                 >
                   Testimonials
                 </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
-                  to="/destinations"
+                  to="/#contact-section"
                 >
                   Contact
                 </Link>

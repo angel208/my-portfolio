@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
+  scroll-behavior: smooth;
   @apply bg-main-background;
 }
 
