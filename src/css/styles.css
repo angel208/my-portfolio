@@ -173,3 +173,12 @@ h2 {
     @apply mx-6 my-4 text-2xl;
   }
 }
+
+/* form */
+.input {
+  @apply transform transition ease-in duration-200 w-full my-4 bg-transparent border-b border-opacity-25 border-secondary-text text-secondary-text  pb-1;
+}
+
+.input:focus {
+  @apply outline-none scale-105 border-opacity-50 border-primary;
+}
