@@ -10,7 +10,7 @@ import {
 export default function Banner() {
   return (
     <div
-      className={`banner-background lg:banner-background-lg h-screen w-full flex flex-col justify-center items-center object-fill -mt-24`}
+      className={`banner-background lg:banner-background-lg h-screen w-full flex flex-col justify-center items-center object-fill -mt-24 pt-24`}
     >
       <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0 z-10"></div>
       <div className="z-20 h-full w-full flex flex-col items-center justify-center lg:flex-row lg:justify-start">

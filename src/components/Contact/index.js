@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div
       id="contact-section"
-      className={` h-auto w-full px-20 py-24 lg:py-32 xl:px-64 flex flex-col-reverse lg:flex-row`}
+      className={` h-auto w-full px-10 sm:px-20 py-24 lg:py-32 xl:px-64 flex flex-col-reverse lg:flex-row`}
     >
       <div
         name="form"
@@ -33,7 +33,7 @@ export default function Contact() {
           name="text"
           id="text"
           placeholder="text"
-          className="input mt-12 placeholder-secondary-text border-opacity-25 placeholder-opacity-25"
+          className="input  mt-8 sm:mt-12 placeholder-secondary-text border-opacity-25 placeholder-opacity-25"
         ></textarea>
         <button className="btn btn-primary mt-12 lg:w-40 lg:h-12 lg:py-2">
           Lets Talk

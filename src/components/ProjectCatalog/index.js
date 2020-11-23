@@ -36,14 +36,14 @@ export default function ProjectCatalog() {
   return (
     <div
       id="projects-section"
-      className={`background-transparent h-auto w-full pt-4 pb-56 flex flex-col justify-center items-center object-fill`}
+      className={`background-transparent h-auto w-full pt-4 pb-32 sm:pb-56 flex flex-col justify-center items-center object-fill`}
     >
       <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-40 text-center text-4xl border-t border-primary">
         Projects
       </h1>
       <div
         name="GridCardContainer"
-        className="grid-card-container h-auto lg:h-auto"
+        className="grid-card-container sm:w-8/10 h-auto lg:h-auto"
       >
         {data.allMarkdownRemark.edges.map(edge => (
           <Link
@@ -54,7 +54,7 @@ export default function ProjectCatalog() {
               <h2 className="hover:text-primary hover:scale-110">
                 {edge.node.frontmatter.title}
               </h2>
-              <p className="font-light">{edge.node.frontmatter.description}</p>
+              <p className="font-light ">{edge.node.frontmatter.description}</p>
             </div>
             <Img
               fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}

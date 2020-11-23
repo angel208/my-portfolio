@@ -18,7 +18,7 @@ export default function Skills() {
       </h1>
       <div
         name="GridCardContainer"
-        className="grid-card-container  h-screen lg:h-80vh"
+        className="grid-card-container sm:w-7/10 md:w-8/10 h-auto lg:h-80vh"
       >
         <div className="skill-card">
           <FaPython className="card-icon" />
@@ -52,7 +52,7 @@ export default function Skills() {
             consectetur fre.
           </p>
         </div>
-        <div className="skill-card invisible md:visible">
+        <div className="skill-card hidden md:flex">
           <FaPython className="card-icon" />
           <h2>Back-End Developer</h2>
           <p>
@@ -60,7 +60,7 @@ export default function Skills() {
             consectetur fre.
           </p>
         </div>
-        <div className="skill-card   invisible md:visible">
+        <div className="skill-card  hidden  md:flex">
           <FaWordpressSimple className="card-icon" />
           <h2>Back-End Developer</h2>
           <p>

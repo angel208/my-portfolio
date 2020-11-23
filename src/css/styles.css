@@ -107,7 +107,7 @@ h2 {
 }
 
 .grid-card-container {
-  @apply grid w-8/10  p-12 pt-20   gap-5;
+  @apply grid  w-full  p-12 pt-20   gap-5;
 }
 
 @screen md {
@@ -183,4 +183,9 @@ h2 {
 
 .input:focus {
   @apply outline-none scale-105 border-opacity-50 border-primary;
+}
+
+/* testimonials */
+.BrainhubCarousel__arrows {
+  background-color: #fe0000;
 }
