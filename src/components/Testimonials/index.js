@@ -4,6 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 export default function Testimonials() {
   return (
     <div
+      id="testimonials-section"
       className={`bg-secondary-background py-32 w-full flex flex-col justify-center items-center object-fill`}
     >
       <h2 className="text-3xl text-main-text w-8/10 sm:text-4xl text-center block mb-5">

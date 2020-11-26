@@ -5,6 +5,7 @@
 html,
 body {
   scroll-behavior: smooth;
+
   @apply bg-main-background;
 }
 
