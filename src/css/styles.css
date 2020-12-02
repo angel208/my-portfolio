@@ -194,3 +194,76 @@ h2 {
 .BrainhubCarousel__arrows {
   background-color: #fe0000;
 }
+
+/*   material forms */
+/* creadits to the following documentation https://tailwindcomponents.com/component/material-ui-textfield-1 */
+.md-input-main {
+  @apply font-sans text-xl w-full my-5 pb-1;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.md-input-box {
+  @apply relative;
+  position: relative;
+}
+
+.md-input {
+  @apply w-full bg-transparent text-main-text text-base;
+  width: 100%;
+  outline: none;
+  height: 50px;
+}
+
+.md-label {
+  @apply absolute pointer-events-none block text-secondary-text text-sm;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: translate(0, -40px) scale(1);
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+    transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.md-label-focus {
+  @apply text-secondary-text;
+  transform: translate(0, -65px) scale(0.75);
+  transform-origin: top left;
+}
+
+.md-input-underline {
+  @apply border-opacity-25 border-b border-secondary-text border-opacity-25;
+}
+
+.md-input-underline:after {
+  @apply absolute left-0 right-0 pointer-events-none border-b-2 border-primary;
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  bottom: -0.05rem;
+  content: "";
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transform: scaleX(0);
+}
+
+.md-input:focus ~ .md-input-underline:after {
+  transform: scaleX(1);
+}
+
+.md-input:focus + .md-label,
+.md-input:not(:placeholder-shown) + .md-label {
+  @apply md-label-focus  text-main-text;
+  transform: translate(0, -65px) scale(0.75);
+  transform-origin: top left;
+}
+
+textarea:focus + .md-label,
+textarea:not(:placeholder-shown) + .md-label {
+  @apply md-label-focus  text-main-text;
+  transform: translate(0, -110px) scale(0.75) !important;
+  transform-origin: top left;
+}

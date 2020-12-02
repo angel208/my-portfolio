@@ -64,24 +64,56 @@ export default function Contact() {
         method="POST"
         className="w-full lg:w-2/3 bg-secondary-background flex flex-col items-center lg:items-start justify-evenly px-12 py-12 lg:py-6 lg:mx-16"
       >
-        <input
-          name="name"
-          id="name"
-          placeholder="name"
-          className=" input placeholder-secondary-text border-opacity-25 placeholder-opacity-25"
-        ></input>
-        <input
-          name="email"
-          id="email"
-          placeholder="email"
-          className="input placeholder-secondary-text border-opacity-25 placeholder-opacity-25"
-        ></input>
-        <textarea
-          name="text"
-          id="text"
-          placeholder="text"
-          className="input  mt-8 sm:mt-12 placeholder-secondary-text border-opacity-25 placeholder-opacity-25"
-        ></textarea>
+        <div className="md-input-main">
+          <div className="md-input-box">
+            <input
+              name="name"
+              id="name"
+              type="text"
+              className="md-input"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="name" className="md-label">
+              Name
+            </label>
+            <div class="md-input-underline border-opacity-25" />
+          </div>
+        </div>
+
+        <div className="md-input-main">
+          <div className="md-input-box">
+            <input
+              name="email"
+              id="email"
+              type="text"
+              className="md-input"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label for="email" className="md-label">
+              Email
+            </label>
+            <div class="md-input-underline border-opacity-25" />
+          </div>
+        </div>
+
+        <div className="md-input-main mt-8 sm:mt-12">
+          <div className="md-input-box">
+            <textarea
+              name="text"
+              id="text"
+              className="md-input  h-20 "
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label for="text" className="md-label">
+              Your Message
+            </label>
+            <div class="md-input-underline" />
+          </div>
+        </div>
+
         <button className="btn btn-primary mt-12 lg:w-40 lg:h-12 lg:py-2">
           Lets Talk
         </button>
