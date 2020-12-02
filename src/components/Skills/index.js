@@ -11,14 +11,14 @@ export default function Skills() {
   return (
     <div
       id="skills-section"
-      className={`background-transparent h-auto w-full py-8 lg:pt-0 lg:pb-16 flex flex-col justify-center items-center object-fill`}
+      className={`background-transparent h-auto w-full py-3 lg:pt-0 lg:pb-8 flex flex-col justify-center items-center object-fill`}
     >
-      <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-24 text-center text-4xl border-t border-primary">
+      <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-24 text-center text-4xl border-t-2 border-primary">
         Skills
       </h1>
       <div
         name="GridCardContainer"
-        className="grid-card-container sm:w-7/10 md:w-8/10 h-auto lg:h-80vh"
+        className="grid-card-container sm:w-7/10 md:w-8/10 h-auto lg:h-auto"
       >
         <div className="skill-card">
           <FaPython className="card-icon" />

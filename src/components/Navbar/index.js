@@ -73,6 +73,7 @@ export default function Navbar() {
                   to="/#about-section"
                 >
                   About Me
+                  <span name="border"></span>
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -82,6 +83,7 @@ export default function Navbar() {
                   to="/#skills-section"
                 >
                   Skills
+                  <span name="border"></span>
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -91,6 +93,7 @@ export default function Navbar() {
                   to="/#projects-section"
                 >
                   Projects
+                  <span name="border"></span>
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -100,6 +103,7 @@ export default function Navbar() {
                   to="/#testimonials-section"
                 >
                   Testimonials
+                  <span name="border"></span>
                 </Link>
               </div>
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
@@ -109,6 +113,7 @@ export default function Navbar() {
                   to="/#contact-section"
                 >
                   Contact
+                  <span name="border"></span>
                 </Link>
               </div>
             </ul>

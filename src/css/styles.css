@@ -17,11 +17,11 @@ h2 {
 }
 
 .social-icon {
-  @apply text-4xl mx-3;
+  @apply text-4xl mx-3 transform scale-100 transition-all ease-in duration-200;
 }
 
 .social-icon:hover {
-  @apply transform scale-110 transition-all ease-in duration-200;
+  @apply scale-110;
 }
 
 @screen lg {
@@ -33,11 +33,15 @@ h2 {
 @layer utilities {
   @responsive {
     .nav-link {
-      @apply text-main-text text-center p-8 w-full table uppercase;
+      @apply text-main-text text-center p-8 w-full table uppercase relative;
     }
 
-    .nav-link:hover {
-      @apply border-b-2 border-primary;
+    .nav-link > span {
+      @apply w-full border-b-2 border-primary z-30 absolute bottom-0 left-0 transform transition ease-linear duration-200 scale-0;
+    }
+
+    .nav-link:hover > span {
+      @apply scale-100;
     }
 
     .nav-link-lg {
@@ -59,11 +63,11 @@ h2 {
 }
 
 .btn {
-  @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer;
+  @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer transition ease-linear duration-200 transform scale-100;
 }
 
 .btn:hover {
-  @apply bg-primary transition ease-linear duration-200 border-2 border-primary transform scale-110;
+  @apply bg-primary border-2 border-primary scale-110;
 }
 
 @screen lg {
@@ -164,11 +168,11 @@ h2 {
 
 /* footer */
 .footer-social-icon {
-  @apply text-xl mx-3;
+  @apply text-xl mx-3 transform scale-100 transition-all ease-in duration-200;
 }
 
 .footer-social-icon:hover {
-  @apply transform scale-110 transition-all ease-in duration-200;
+  @apply scale-110;
 }
 
 @screen lg {

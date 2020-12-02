@@ -24,7 +24,6 @@ export default function Footer() {
       <h1 className="px-6 py-6 text-2xl lg:text-3xl md:w-5/10 lg:w-3/10 text-center leading-tight ">
         Let´s Make Something Great Together
       </h1>
-      <p>angel.fp204@gmail.com</p>
       <div className="flex justify-center items-center mt-5">
         <span className="footer-social-icon">
           <a href="#">

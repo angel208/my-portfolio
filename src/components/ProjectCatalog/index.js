@@ -38,7 +38,7 @@ export default function ProjectCatalog() {
       id="projects-section"
       className={`background-transparent h-auto w-full pt-4 pb-32 sm:pb-56 flex flex-col justify-center items-center object-fill`}
     >
-      <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-40 text-center text-4xl border-t border-primary">
+      <h1 className="text-main-text mt-12 lg:mt-0 pt-4 w-40 text-center text-4xl border-t-2 border-primary">
         Projects
       </h1>
       <div
