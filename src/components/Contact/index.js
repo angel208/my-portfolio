@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import SectionTitle from "../Global/SectionTitle"
 
 export default function Contact() {
   const [status, setStatus] = useState("")
@@ -123,7 +124,8 @@ export default function Contact() {
         className="w-full lg:w-1/3 lg:mx-12 text-center lg:text-left py-8"
       >
         <p className="text-primary">Lets Talk</p>
-        <h2 className="text-4xl py-2">Contact Me</h2>
+
+        <SectionTitle text="Contact Me" left={true} />
         <p className="text-secondary-text py-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor
           nulla in porta faucibus. Nam at convallis magna. Vivamus vitae odio

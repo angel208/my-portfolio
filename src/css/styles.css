@@ -16,20 +16,6 @@ h2 {
   @apply text-main-text;
 }
 
-.social-icon {
-  @apply text-4xl mx-3 transform scale-100 transition-all ease-in duration-200;
-}
-
-.social-icon:hover {
-  @apply scale-110;
-}
-
-@screen lg {
-  .social-icon {
-    @apply mx-8 my-4;
-  }
-}
-
 @layer utilities {
   @responsive {
     .nav-link {
@@ -85,32 +71,6 @@ h2 {
 }
 
 /*skills*/
-.skill-card {
-  @apply w-full h-full bg-secondary-background  px-4  py-4 text-center flex flex-col items-center justify-evenly;
-}
-
-.skill-card h2 {
-  @apply text-main-text text-xl  mb-3;
-}
-
-.skill-card p {
-  @apply text-secondary-text text-sm;
-}
-
-@screen lg {
-  .skill-card {
-    @apply px-8  py-8;
-  }
-
-  .skill-card h2 {
-    @apply text-2xl;
-  }
-
-  .skill-card p {
-    @apply text-base;
-  }
-}
-
 .grid-card-container {
   @apply grid  w-full  p-12 pt-20   gap-5;
 }
@@ -166,19 +126,8 @@ h2 {
   @apply justify-center items-center top-0 text-center pt-0 pl-0;
 }
 
-/* footer */
-.footer-social-icon {
-  @apply text-xl mx-3 transform scale-100 transition-all ease-in duration-200;
-}
-
-.footer-social-icon:hover {
-  @apply scale-110;
-}
-
-@screen lg {
-  .footer-social-icon {
-    @apply mx-6 my-4 text-2xl;
-  }
+.post-item2:hover .post-summary2 {
+  @apply justify-center items-center top-0 text-center pt-0 pl-0;
 }
 
 /* form */

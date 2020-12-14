@@ -1,11 +1,6 @@
 import React from "react"
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-  FaGithub,
-} from "react-icons/fa"
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"
+import SocialIcon from "../Global/SocialIcon"
 
 export default function Banner() {
   return (
@@ -18,21 +13,9 @@ export default function Banner() {
           name="socialIcons"
           className="text-white flex flex-row  lg:h-full lg:flex-col lg:mb-12 justify-end "
         >
-          <span className="social-icon">
-            <a href="#">
-              <FaLinkedin />
-            </a>
-          </span>
-          <span className="social-icon">
-            <a href="#">
-              <FaGithub />
-            </a>
-          </span>
-          <span className="social-icon">
-            <a href="#">
-              <FaInstagram />
-            </a>
-          </span>
+          <SocialIcon iconComponent={<FaLinkedin />} linkRef="#" size="md" />
+          <SocialIcon iconComponent={<FaGithub />} linkRef="#" size="md" />
+          <SocialIcon iconComponent={<FaInstagram />} linkRef="#" size="md" />
         </div>
         <div name="Hero" className="p-6 lg:pl-12">
           <h1 className="text-4xl sm:text-6xl uppercase text-center md:text-left">

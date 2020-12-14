@@ -6,6 +6,7 @@ import {
   FaArrowUp,
   FaGithub,
 } from "react-icons/fa"
+import SocialIcon from "../Global/SocialIcon"
 
 export default function Footer() {
   const scrollTop = () => {
@@ -25,21 +26,9 @@ export default function Footer() {
         Let´s Make Something Great Together
       </h1>
       <div className="flex justify-center items-center mt-5">
-        <span className="footer-social-icon">
-          <a href="#">
-            <FaGithub />
-          </a>
-        </span>
-        <span className="footer-social-icon">
-          <a href="#">
-            <FaTwitter />
-          </a>
-        </span>
-        <span className="footer-social-icon">
-          <a href="#">
-            <FaLinkedin />
-          </a>
-        </span>
+        <SocialIcon iconComponent={<FaLinkedin />} linkRef="#" size="sm" />
+        <SocialIcon iconComponent={<FaGithub />} linkRef="#" size="sm" />
+        <SocialIcon iconComponent={<FaInstagram />} linkRef="#" size="sm" />
       </div>
     </div>
   )
