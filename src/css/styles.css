@@ -126,10 +126,6 @@ h2 {
   @apply justify-center items-center top-0 text-center pt-0 pl-0;
 }
 
-.post-item2:hover .post-summary2 {
-  @apply justify-center items-center top-0 text-center pt-0 pl-0;
-}
-
 /* form */
 .input {
   @apply transform transition ease-in duration-200 w-full my-4 bg-transparent border-b border-opacity-25 border-secondary-text text-secondary-text  pb-1;
@@ -142,6 +138,10 @@ h2 {
 /* testimonials */
 .BrainhubCarousel__arrows {
   background-color: #fe0000;
+}
+
+.testimonial-text {
+  @apply text-secondary-text mb-12 mt-8 px-12;
 }
 
 /*   material forms */
