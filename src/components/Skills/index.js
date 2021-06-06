@@ -5,6 +5,7 @@ import {
   FaAtlassian,
   FaReact,
   FaWordpressSimple,
+  FaDatabase,
 } from "react-icons/fa"
 import SectionTitle from "../Global/SectionTitle"
 
@@ -23,43 +24,43 @@ export default function Skills() {
         className="grid-card-container sm:w-7/10 md:w-8/10 h-auto lg:h-auto"
       >
         <SkillCard
-          title={"Back-End Developer"}
+          title={"Back-End Development"}
           iconComponent={<FaPython className="card-icon" />}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
           }
         />
         <SkillCard
-          title={"Back-End Developer"}
+          title={"AWS Architectures"}
           iconComponent={<FaAws className="card-icon" />}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
           }
         />
         <SkillCard
-          title={"Back-End Developer"}
+          title={"Front-End Development"}
           iconComponent={<FaReact className="card-icon" />}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
           }
         />
         <SkillCard
-          title={"Back-End Developer"}
+          title={"Atlassian Certificated"}
           iconComponent={<FaAtlassian className="card-icon" />}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
           }
         />
         <SkillCard
-          title={"Back-End Developer"}
-          iconComponent={<FaPython className="card-icon" />}
+          title={"Database Analysis"}
+          iconComponent={<FaDatabase className="card-icon" />}
           smallHidden={true}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
           }
         />
         <SkillCard
-          title={"Back-End Developer"}
+          title={"Wordpress Development"}
           iconComponent={<FaWordpressSimple className="card-icon" />}
           smallHidden={true}
           text={

@@ -1,6 +1,7 @@
 import React from "react"
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"
 import SocialIcon from "../Global/SocialIcon"
+import { Link } from "gatsby"
 
 export default function Banner() {
   return (
@@ -25,8 +26,16 @@ export default function Banner() {
             SW Engineer / Backend Dev / Cloud Arch
           </p>
           <div className="mt-8 lg:mt-16">
-            <button className="btn btn-primary">Get Started</button>
-            <button className="btn lg:ml-6">Get Started</button>
+            <button className="btn btn-primary">
+              <Link name="navLinks" to="/#contact-section">
+                Let's Talk
+              </Link>
+            </button>
+            <button className="btn lg:ml-6">
+              <Link name="navLinks" to="/#projects-section">
+                Projects
+              </Link>
+            </button>
           </div>
         </div>
       </div>

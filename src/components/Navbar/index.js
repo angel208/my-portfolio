@@ -3,19 +3,21 @@ import { Link } from "gatsby"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import { DiReact } from "react-icons/di"
+import useScrollDirection from "./useScrollDirection.js"
 
 import styles from "./Navbar.module.css"
 
 export default function Navbar() {
   const [click, setClick] = useState(false)
-  const [scroll, setScroll] = useState(false)
+  const [scrollAfterTop, setScrollAfterTop] = useState(false)
+  const scrollingDown = useScrollDirection()
+  //use cutom hook to know the direction of the scroll
 
   const changeNav = () => {
-    if (window.scrollY > 80) {
-      setScroll(true)
-    } else {
-      setScroll(false)
-    }
+    const currentPosition = window.scrollY
+
+    if (currentPosition >= 80) setScrollAfterTop(true)
+    if (currentPosition < 80) setScrollAfterTop(false)
   }
 
   const handleClick = () => {
@@ -24,7 +26,12 @@ export default function Navbar() {
 
   useEffect(() => {
     changeNav()
+
     window.addEventListener("scroll", changeNav)
+
+    return function cleanupListener() {
+      window.removeEventListener("scroll", changeNav)
+    }
   }, [])
 
   //TODO: separate responsive navbar in two components
@@ -36,7 +43,12 @@ export default function Navbar() {
           id="nav"
           className={`flex justify-center items-center text-base sticky top-0 z-50
           ${click ? styles.clickedNav : styles.unclickedNav}
-          ${scroll ? styles.activeNav : styles.inactiveNav}  `}
+          ${scrollAfterTop ? styles.activeNav : styles.inactiveNav} 
+          ${
+            scrollingDown && scrollAfterTop
+              ? styles.hiddenNav
+              : styles.displayedNav
+          } `}
         >
           <div
             name="navbarContainer"
@@ -60,7 +72,7 @@ export default function Navbar() {
             </div>
             <ul
               name="navMenu"
-              className={` flex flex-col w-full h-almostscreen absolute opacity-100  left-0 bg-main-background
+              className={` flex flex-col w-full h-almostscreen absolute opacity-100  left-0 bg-main-background transition-all ease-in duration-500
                                 lg:flex-row lg:w-auto lg:h-auto lg:relative lg:text-center lg:list-none lg:items-center lg:bg-transparent 
               ${click ? `top-100` : `top-negative lg:top-100`} `}
               onClick={handleClick}

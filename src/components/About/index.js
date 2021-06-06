@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import CVFile from "../../static/EN - Angel Peña Curriculum 2020.pdf"
+
 export default function About() {
   const image = useStaticQuery(graphql`
     query {
@@ -37,7 +39,9 @@ export default function About() {
           Atlassian tools implantation and maintenance and softwaredevelopment.
         </p>
         <div className="mt-8 lg:mt-8">
-          <button className="btn ">Download CV</button>
+          <a href={CVFile} download>
+            <button className="btn ">Download CV</button>
+          </a>
         </div>
       </div>
     </div>

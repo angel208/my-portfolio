@@ -34,6 +34,7 @@ module.exports = {
         "secondary-background": "#1E1E1E",
         "main-text": "#F1F1F1",
         "secondary-text": "#B2B2B2",
+        subtitle: "rgb(117, 117, 117)",
         primary: "#FE0000",
         secondary: "#FE0000",
         banner: "#202731",

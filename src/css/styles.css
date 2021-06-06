@@ -52,6 +52,10 @@ h2 {
   @apply w-full border-2 border-main-text bg-transparent whitespace-no-wrap px-5 py-5 my-2 text-main-text text-lg outline-none border-main-text cursor-pointer transition ease-linear duration-200 transform scale-100;
 }
 
+.btn:focus {
+  @apply outline-none;
+}
+
 .btn:hover {
   @apply bg-primary border-2 border-primary scale-110;
 }
@@ -215,4 +219,24 @@ textarea:not(:placeholder-shown) + .md-label {
   @apply md-label-focus  text-main-text;
   transform: translate(0, -110px) scale(0.75) !important;
   transform-origin: top left;
+}
+
+/*  project page **/
+.project-content > * {
+  color: black !important;
+  margin-bottom: 1.9em;
+  font-size: 1.15rem;
+  line-height: 32px;
+}
+
+.project-content > h1 {
+  color: black !important;
+  margin-bottom: 0.3em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.project-content > p > a {
+  color: #fe0000 !important;
 }

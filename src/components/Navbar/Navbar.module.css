@@ -1,14 +1,17 @@
 /*TODO: take a look at the css to understand it better.*/
 
-.activeNav {
-  background: #1e1e1e;
-  opacity: 40%;
-  transition: all ease 0.5s;
-}
+@media screen and (min-width: 960px) {
+  .activeNav {
+    background: #1e1e1e;
+    opacity: 40%;
+    transition: all ease 0.5s;
+  }
 
-.inactiveNav {
+  .hiddenNav {
+    top: -100px !important;
+    transition: all ease 1s;
+  }
 }
-
 .menu-icon {
   color: #f1f1f1 !important;
 }
