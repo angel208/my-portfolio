@@ -38,7 +38,7 @@ export default function ProjectCatalog() {
   return (
     <div
       id="projects-section"
-      className={`background-transparent h-auto w-full pt-4 pb-32 sm:pb-56 flex flex-col justify-center items-center object-fill`}
+      className={`background-transparent h-auto w-full pt-4 pb-32 sm:pb-24 flex flex-col justify-center items-center object-fill`}
     >
       <SectionTitle text="Projects" border={true} />
       <div
@@ -49,7 +49,12 @@ export default function ProjectCatalog() {
           <ProjectItem projectPost={edge.node.frontmatter} />
         ))}
       </div>
-      <div className="w-8/10 px-12 lg:w-auto">
+
+      <div
+        className={`w-8/10 px-12 lg:w-auto xl:pt-24 ${
+          data.allMarkdownRemark.edges.length < 6 ? "hidden" : ""
+        } `}
+      >
         <button className="btn btn-primary">All Projects</button>
       </div>
     </div>
