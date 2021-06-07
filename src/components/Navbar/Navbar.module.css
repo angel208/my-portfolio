@@ -3,12 +3,12 @@
 @media screen and (min-width: 960px) {
   .activeNav {
     background: #1e1e1e;
-    opacity: 0.4;
+    opacity: 0.4 !important;
     transition: all ease 0.5s;
   }
 
   .inactiveNav {
-    opacity: 1;
+    opacity: 0.99 !important;
     transition: all ease 0.5s;
   }
 
