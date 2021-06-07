@@ -38,7 +38,7 @@ export default function Navbar() {
       <IconContext.Provider value={{ color: "141414" }}>
         <nav
           id="nav"
-          className={`flex justify-center items-center text-base sticky top-0 z-50
+          className={`flex justify-center items-center text-base sticky top-0 z-50 
           ${click ? styles.clickedNav : styles.unclickedNav} 
           ${scrollAfterTop ? styles.activeNav : styles.inactiveNav}  
           ${
