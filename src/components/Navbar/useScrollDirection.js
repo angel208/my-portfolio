@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 
 const useScrollDirection = () => {
-  const prevPosition = useRef(window.scrollY)
+  const prevPosition = useRef(0)
   const [scrollingDown, setScrollingDown] = useState(() => false)
 
   let checkScrollDirection = () => {
