@@ -1,7 +1,6 @@
 import React from "react"
 
 import Loadable from "react-loadable"
-const loader = () => <div>Loading...</div>
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +9,8 @@ import About from "../components/About"
 import Skills from "../components/Skills"
 import ProjectCatalog from "../components/ProjectCatalog"
 import Contact from "../components/Contact"
+
+const loader = () => <div>Loading...</div>
 
 const LoadableTestimonials = Loadable({
   loader: () => import("../components/Testimonials"),

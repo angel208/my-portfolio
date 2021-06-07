@@ -3,7 +3,12 @@
 @media screen and (min-width: 960px) {
   .activeNav {
     background: #1e1e1e;
-    opacity: 40%;
+    opacity: 0.4;
+    transition: all ease 0.5s;
+  }
+
+  .inactiveNav {
+    opacity: 1;
     transition: all ease 0.5s;
   }
 
@@ -11,7 +16,13 @@
     top: -100px !important;
     transition: all ease 1s;
   }
+
+  .displayedNav {
+    top: 0px !important;
+    transition: all ease 1s;
+  }
 }
+
 .menu-icon {
   color: #f1f1f1 !important;
 }

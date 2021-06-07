@@ -24,8 +24,6 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    changeNav()
-
     window.addEventListener("scroll", changeNav)
 
     return function cleanupListener() {
@@ -41,8 +39,8 @@ export default function Navbar() {
         <nav
           id="nav"
           className={`flex justify-center items-center text-base sticky top-0 z-50
-          ${click ? styles.clickedNav : styles.unclickedNav}
-          ${scrollAfterTop ? styles.activeNav : styles.inactiveNav} 
+          ${click ? styles.clickedNav : styles.unclickedNav} 
+          ${scrollAfterTop ? styles.activeNav : styles.inactiveNav}  
           ${
             scrollingDown && scrollAfterTop
               ? styles.hiddenNav
