@@ -1,6 +1,5 @@
 import React from "react"
 import {
-  FaPenFancy,
   FaQuoteLeft,
   FaQuoteRight,
   FaAngleLeft,

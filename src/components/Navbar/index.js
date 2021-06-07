@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-import { DiReact } from "react-icons/di"
 import useScrollDirection from "./useScrollDirection.js"
 
 import styles from "./Navbar.module.css"
