@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import SectionTitle from "../Global/SectionTitle"
 
 export default function Contact() {
-  const [status, setStatus] = useState("")
-
   const submitForm = ev => {
     ev.preventDefault()
     const form = ev.target
@@ -72,13 +70,13 @@ export default function Contact() {
               id="name"
               type="text"
               className="md-input"
-              autocomplete="off"
+              autoComplete="off"
               placeholder=" "
             />
-            <label for="name" className="md-label">
+            <label htmlFor="name" className="md-label">
               Name
             </label>
-            <div class="md-input-underline border-opacity-25" />
+            <div className="md-input-underline border-opacity-25" />
           </div>
         </div>
 
@@ -90,12 +88,12 @@ export default function Contact() {
               type="text"
               className="md-input"
               placeholder=" "
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label for="email" className="md-label">
+            <label htmlFor="email" className="md-label">
               Email
             </label>
-            <div class="md-input-underline border-opacity-25" />
+            <div className="md-input-underline border-opacity-25" />
           </div>
         </div>
 
@@ -106,12 +104,12 @@ export default function Contact() {
               id="text"
               className="md-input  h-20 "
               placeholder=" "
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label for="text" className="md-label">
+            <label htmlFor="text" className="md-label">
               Your Message
             </label>
-            <div class="md-input-underline" />
+            <div className="md-input-underline" />
           </div>
         </div>
 

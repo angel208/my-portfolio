@@ -26,16 +26,12 @@ export default function Banner() {
             SW Engineer / Backend Dev / Cloud Arch
           </p>
           <div className="mt-8 lg:mt-16">
-            <button className="btn btn-primary">
-              <Link name="navLinks" to="/#contact-section">
-                Let's Talk
-              </Link>
-            </button>
-            <button className="btn lg:ml-6">
-              <Link name="navLinks" to="/#projects-section">
-                Projects
-              </Link>
-            </button>
+            <Link name="navLinks" to="/#contact-section">
+              <button className="btn btn-primary">Let's Talk</button>
+            </Link>
+            <Link name="navLinks" to="/#projects-section">
+              <button className="btn lg:ml-6">Projects</button>
+            </Link>
           </div>
         </div>
       </div>

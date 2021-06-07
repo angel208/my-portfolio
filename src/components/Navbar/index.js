@@ -58,8 +58,11 @@ export default function Navbar() {
             ></Link>
             <div
               name="mobileIcon"
+              role="button"
+              tabIndex={0}
               className={` block absolute top-0 right-0 mt-4 mr-8 transform text-3xl cursor-pointer lg:hidden z-40`}
               onClick={handleClick}
+              onKeyDown={handleClick}
             >
               {click ? (
                 <FaTimes className="menu-icon text-main-text" />
@@ -73,7 +76,8 @@ export default function Navbar() {
                                 lg:flex-row lg:w-auto lg:h-auto lg:relative lg:text-center lg:list-none lg:items-center lg:bg-transparent 
               ${click ? `top-100` : `top-negative lg:top-100`} `}
               onClick={handleClick}
-              click={click}
+              onKeyDown={handleClick}
+              click={click.toString()}
             >
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link

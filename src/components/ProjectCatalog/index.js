@@ -1,7 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
 import SectionTitle from "../Global/SectionTitle"
 import ProjectItem from "./ProjectItem"
 
@@ -46,7 +44,10 @@ export default function ProjectCatalog() {
         className="grid-card-container sm:w-8/10 h-auto lg:h-auto"
       >
         {data.allMarkdownRemark.edges.map(edge => (
-          <ProjectItem projectPost={edge.node.frontmatter} />
+          <ProjectItem
+            projectPost={edge.node.frontmatter}
+            key={edge.node.frontmatter.slug}
+          />
         ))}
       </div>
 

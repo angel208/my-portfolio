@@ -1,11 +1,5 @@
 import React from "react"
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaArrowUp,
-  FaGithub,
-} from "react-icons/fa"
+import { FaInstagram, FaLinkedin, FaArrowUp, FaGithub } from "react-icons/fa"
 import SocialIcon from "../Global/SocialIcon"
 
 export default function Footer() {

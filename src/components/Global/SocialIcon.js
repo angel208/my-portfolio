@@ -4,7 +4,6 @@ export default function SocialIcon(props) {
   const iconComponent = props.iconComponent
   const size = props.size
   const linkRef = props.linkRef
-  const primary = props.primary
 
   return (
     <span

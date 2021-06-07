@@ -56,7 +56,7 @@ export default function Testimonials() {
           hasThumbnails={false}
           isAutoPlaying={true}
           transitionSpeed={10}
-          hasDotButtons={"bottomCenter"}
+          hasDotButtons={"bottom"}
           activeIcon={<FaSquare className="text-primary mx-1 text-xs" />}
           passiveIcon={
             <FaSquare className="text-secondary-text mx-1 text-xs" />

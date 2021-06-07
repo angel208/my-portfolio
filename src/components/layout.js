@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
 import Footer from "./Footer"
@@ -17,16 +16,6 @@ const Layout = ({ children }) => {
     // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#"]')
   }
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
