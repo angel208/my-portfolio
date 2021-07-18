@@ -20,9 +20,9 @@ export default function Footer() {
         Let´s Make Something Great Together
       </h1>
       <div className="flex justify-center items-center mt-5">
-        <SocialIcon iconComponent={<FaLinkedin />} linkRef="#" size="sm" />
-        <SocialIcon iconComponent={<FaGithub />} linkRef="#" size="sm" />
-        <SocialIcon iconComponent={<FaInstagram />} linkRef="#" size="sm" />
+        <SocialIcon iconComponent={<FaLinkedin />} linkRef="https://www.linkedin.com/in/angelfabriciop/" size="sm" />
+        <SocialIcon iconComponent={<FaGithub />} linkRef="https://github.com/angel208" size="sm" />
+        <SocialIcon iconComponent={<FaInstagram />} linkRef="https://www.instagram.com/angelfabriciop/" size="sm" />
       </div>
     </div>
   )

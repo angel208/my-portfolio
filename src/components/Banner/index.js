@@ -14,9 +14,9 @@ export default function Banner() {
           name="socialIcons"
           className="text-white flex flex-row  lg:h-full lg:flex-col lg:mb-12 justify-end "
         >
-          <SocialIcon iconComponent={<FaLinkedin />} linkRef="#" size="md" />
-          <SocialIcon iconComponent={<FaGithub />} linkRef="#" size="md" />
-          <SocialIcon iconComponent={<FaInstagram />} linkRef="#" size="md" />
+          <SocialIcon iconComponent={<FaLinkedin />} linkRef="https://www.linkedin.com/in/angelfabriciop/" size="md" />
+          <SocialIcon iconComponent={<FaGithub />} linkRef="https://github.com/angel208" size="md" />
+          <SocialIcon iconComponent={<FaInstagram />} linkRef="https://www.instagram.com/angelfabriciop/" size="md" />
         </div>
         <div name="Hero" className="p-6 lg:pl-12">
           <h1 className="text-4xl sm:text-6xl uppercase text-center md:text-left">
