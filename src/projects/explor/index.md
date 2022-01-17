@@ -4,6 +4,8 @@ date: "2019-05-04"
 title: "Explor"
 description: "Travel site made in gatsby"
 featuredImage: ./featured.jpg
+url: "asdasd"
+tags: ["React", "Gastby"]
 ---
 
 # Hic est manus fata marito constitit erit

@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import { FaGithub } from "react-icons/fa"
+import { FaGithub, FaLink } from "react-icons/fa"
 import SocialIcon from "../components/Global/SocialIcon"
 
 export default function project({ data }) {
@@ -28,15 +28,36 @@ export default function project({ data }) {
               linkRef={frontmatter.github}
               size="md"
             />
+            { frontmatter.url ? 
+             <SocialIcon
+              iconComponent={<FaLink color="black" />}
+              linkRef={frontmatter.url}
+              size="sm"
+            /> : ""
+          }
           </div>
+          <Link
+              name="navbarLogo"
+              className={`text-subtitle block text-right w-full`}
+              to="/">
+                 {'< Go back'}
+          </Link>
           <h1 className="text-black text-4xl lg:text-5xl">
             {frontmatter.title}
           </h1>
-          <h2 className="mb-10 text-subtitle text-xl lg:text-2xl ">
+          <div>{ frontmatter.tags ?
+            frontmatter.tags.map( (tag, i)=> (
+              <div className="inline text-subtitle text-sm"> { i > 0 ? <>&middot;</> : ''}  {tag}</div>
+            )) : ''
+          }
+          </div>
+          <h2 className="mt-4 text-subtitle text-xl lg:text-2xl ">
             {frontmatter.description}
           </h2>
+         
+         
           <Img
-            className="mb-10"
+            className="my-10 "
             fluid={frontmatter.featuredImage.childImageSharp.fluid}
           />
           <div>
@@ -60,6 +81,8 @@ export const postQuery = graphql`
         title
         description
         github
+        url
+        tags
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

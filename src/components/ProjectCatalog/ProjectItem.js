@@ -14,7 +14,7 @@ export default function SkillCard(props) {
         <h2 className="hover:text-primary hover:scale-110">
           {projectPost.title}
         </h2>
-        <p className="font-light ">{projectPost.description}</p>
+        <p className="font-light px-2">{projectPost.description}</p>
       </div>
       <Img fluid={projectPost.featuredImage.childImageSharp.fluid} />
     </Link>

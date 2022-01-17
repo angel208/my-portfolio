@@ -27,44 +27,45 @@ export default function Skills() {
           title={"Back-End Development"}
           iconComponent={<FaPython className="card-icon" />}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
+            "Development of back-end apps with Python, Nodejs and Java."
           }
         />
         <SkillCard
           title={"AWS Architectures"}
           iconComponent={<FaAws className="card-icon" />}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
+            "Design and maintenance of AWS architectures. Certified as AWS Solutions Architect."
+          }
+        />
+         <SkillCard
+          title={"Database Analysis"}
+          iconComponent={<FaDatabase className="card-icon" />}
+          smallHidden={true}
+          text={
+            "Design and implementation of Relational and NoSQL databases."
           }
         />
         <SkillCard
           title={"Front-End Development"}
           iconComponent={<FaReact className="card-icon" />}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
+            "Creation of front-end web apps using React ecosystem."
           }
         />
         <SkillCard
-          title={"Atlassian Certificated"}
+          title={"Atlassian Certified"}
           iconComponent={<FaAtlassian className="card-icon" />}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
+            "Jira setup, management and plugin development. Certified as Jira administrator."
           }
         />
-        <SkillCard
-          title={"Database Analysis"}
-          iconComponent={<FaDatabase className="card-icon" />}
-          smallHidden={true}
-          text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
-          }
-        />
+       
         <SkillCard
           title={"Wordpress Development"}
           iconComponent={<FaWordpressSimple className="card-icon" />}
           smallHidden={true}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elitasd fesasd, consectetur fre."
+            "Sites and stores creation using WordPress. WordPress custom code programming."
           }
         />
       </div>

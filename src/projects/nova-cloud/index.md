@@ -5,6 +5,8 @@ title: "Nova Cloud"
 description: "Cloud based drive made in python and AWS"
 featuredImage: ./featured.jpg
 github: https://github.com/angel208/Nova-Drive
+url: "asdasd"
+tags: ["Python"]
 ---
 
 Lorem markdownum fumo iam opus mole: in meae aqua **vinci**: Amorum. Adulterium

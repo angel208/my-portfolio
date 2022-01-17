@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import useScrollDirection from "./useScrollDirection.js"
+import { useLocation  } from '@reach/router';
 
 import styles from "./Navbar.module.css"
 
@@ -10,6 +12,7 @@ export default function Navbar() {
   const [click, setClick] = useState(false)
   const [scrollAfterTop, setScrollAfterTop] = useState(false)
   const scrollingDown = useScrollDirection()
+  const location = useLocation();
   //use cutom hook to know the direction of the scroll
 
   const changeNav = () => {
@@ -25,6 +28,7 @@ export default function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav)
+    
 
     return function cleanupListener() {
       window.removeEventListener("scroll", changeNav)
@@ -51,11 +55,15 @@ export default function Navbar() {
             name="navbarContainer"
             className={`flex justify-between z-10 w-full max-w-screen-xl p-4 lg:p-1`}
           >
-            <Link
+           
+              <Link
               name="navbarLogo"
               className={`text-main-text justify-self-start cursor-pointer no-underline text-2xl flex items-center`}
-              to="/"
-            ></Link>
+              to="/">
+                 { location.pathname != '/' ?  <>Angel Peña</> : '' }
+              </Link>
+
+              
             <div
               name="mobileIcon"
               role="button"
@@ -109,7 +117,7 @@ export default function Navbar() {
                   <span name="border"></span>
                 </Link>
               </div>
-              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+              {/*<div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
@@ -118,7 +126,7 @@ export default function Navbar() {
                   Testimonials
                   <span name="border"></span>
                 </Link>
-              </div>
+              </div> */}
               <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"

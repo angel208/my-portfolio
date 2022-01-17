@@ -24,7 +24,7 @@ const IndexPage = () => (
     <About />
     <Skills />
     <ProjectCatalog />
-    <LoadableTestimonials />
+    {/*<LoadableTestimonials />*/}
     <Contact />
   </Layout>
 )

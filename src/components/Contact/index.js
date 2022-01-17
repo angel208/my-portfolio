@@ -125,10 +125,10 @@ export default function Contact() {
 
         <SectionTitle text="Contact Me" left={true} />
         <p className="text-secondary-text py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor
-          nulla in porta faucibus. Nam at convallis magna. Vivamus vitae odio
-          posuere, molestie lorem sit amet, ultricies quam. Nunc mollis mollis
-          sapien, at ornare velit pretium non. Nam vel elit odio.
+          If you have any questions, please feel free to drop me a line. I'll get back to you as soon as I can. 
+        </p>
+        <p className="text-secondary-text py-1">
+          You can also reach out to me through LinkedIn or via the email on my GitHub profile!
         </p>
       </div>
       <ToastContainer

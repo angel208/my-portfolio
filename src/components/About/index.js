@@ -7,9 +7,9 @@ import CVFile from "../../static/EN - Angel Peña Curriculum 2020.pdf"
 export default function About() {
   const image = useStaticQuery(graphql`
     query {
-      file(extension: { eq: "jpeg" }, name: { eq: "profile2" }) {
+      file(extension: { eq: "jpg" }, name: { eq: "bote" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 320, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -34,9 +34,9 @@ export default function About() {
           About me
         </h1>
         <p className=" text-secondary-text  text-center lg:text-left lg:text-lg">
-          I am a detail driven software engineer, focused on the developmentof
+          I am a detail driven software engineer, focused on the development of
           maintainable solutions, with experience in cloud architecture,
-          Atlassian tools implantation and maintenance and softwaredevelopment.
+          Atlassian tools implantation and maintenance and software development.
         </p>
         <div className="mt-8 lg:mt-8">
           <a href={CVFile} download>

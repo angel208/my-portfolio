@@ -35,10 +35,10 @@ h2 {
     }
 
     .banner-background-lg {
-      background: url("../images/banner-profile-pic.png");
+      background: url("../images/banner-profile-pic2.png");
       background-position: right bottom; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: 40%;
+      background-size: 35%;
       @apply bg-banner;
     }
 
@@ -224,7 +224,7 @@ textarea:not(:placeholder-shown) + .md-label {
 /*  project page **/
 .project-content > * {
   color: black !important;
-  margin-bottom: 1.9em;
+  margin-bottom: 1.5em;
   font-size: 1.15rem;
   line-height: 32px;
 }
@@ -237,6 +237,32 @@ textarea:not(:placeholder-shown) + .md-label {
   line-height: 32px;
 }
 
-.project-content > p > a {
+.project-content > h3 {
+  font-size: 1.5rem;
+}
+
+.project-content > p > a 
+{
   color: #fe0000 !important;
+}
+
+.project-content > p > a > strong
+{
+  color: black !important;
+}
+
+
+.project-content > ul > li
+{
+  list-style: square;
+  margin-left: 50px;
+}
+
+.project-content > ul > li > a
+{
+  color: #fe0000 !important;
+}
+
+.gatsby-resp-image-wrapper{
+  max-width: 450px !important;
 }
