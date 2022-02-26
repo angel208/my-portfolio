@@ -5,25 +5,25 @@ import ProjectItem from "./ProjectItem"
 
 export default function ProjectCatalog() {
   const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-        filter: { fileAbsolutePath: { regex: "/(projects)/" } }
-      ) {
-        edges {
-          node {
-            html
-            id
-            frontmatter {
-              slug
-              title
-              description
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
+     
+  {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+      filter: { fileAbsolutePath: { regex: "/(projects)/" }, frontmatter: {hidden: {eq: false}} }
+    ) {
+      edges {
+        node {
+          html
+          id
+          frontmatter {
+            slug
+            title
+            description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -31,6 +31,7 @@ export default function ProjectCatalog() {
         }
       }
     }
+  }
   `)
 
   return (

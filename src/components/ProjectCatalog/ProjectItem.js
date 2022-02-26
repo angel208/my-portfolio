@@ -7,7 +7,7 @@ export default function SkillCard(props) {
 
   return (
     <Link
-      className="post-item relative overflow-hidden h-64"
+      className="post-item relative overflow-hidden h-56"
       to={projectPost.slug}
     >
       <div className="post-summary ">
@@ -16,7 +16,7 @@ export default function SkillCard(props) {
         </h2>
         <p className="font-light px-2">{projectPost.description}</p>
       </div>
-      <Img fluid={projectPost.featuredImage.childImageSharp.fluid} />
+      <Img className="h-full" fluid={projectPost.featuredImage.childImageSharp.fluid} />
     </Link>
   )
 }

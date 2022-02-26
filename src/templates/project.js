@@ -15,7 +15,7 @@ export default function project({ data }) {
   //TODO: add postlist
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title={frontmatter.title} />
       <div className=" lg:w-10/12 mx-auto bg-white text-black ">
         <div className=" ml-auto mr-auto py-16 px-6 sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-6/12 2xl:w-6/12 ">
           <div

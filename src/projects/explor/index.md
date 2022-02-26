@@ -6,6 +6,7 @@ description: "Travel site made in gatsby"
 featuredImage: ./featured.jpg
 url: "asdasd"
 tags: ["React", "Gastby"]
+hidden: false
 ---
 
 # Hic est manus fata marito constitit erit

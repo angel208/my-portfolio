@@ -11,8 +11,10 @@ import styles from "./Navbar.module.css"
 export default function Navbar() {
   const [click, setClick] = useState(false)
   const [scrollAfterTop, setScrollAfterTop] = useState(false)
+  const [hovered, setHovered] = useState(false)
   const scrollingDown = useScrollDirection()
   const location = useLocation();
+  
   //use cutom hook to know the direction of the scroll
 
   const changeNav = () => {
@@ -42,9 +44,11 @@ export default function Navbar() {
       <IconContext.Provider value={{ color: "141414" }}>
         <nav
           id="nav"
+          onMouseEnter={() => {setHovered(true)}}
+          onMouseLeave={() => setHovered(false)}
           className={`flex justify-center items-center text-base sticky top-0 z-50 
           ${click ? styles.clickedNav : styles.unclickedNav} 
-          ${scrollAfterTop ? styles.activeNav : styles.inactiveNav}  
+          ${scrollAfterTop && !hovered ? styles.activeNav : styles.inactiveNav}  
           ${
             scrollingDown && scrollAfterTop
               ? styles.hiddenNav
@@ -87,7 +91,7 @@ export default function Navbar() {
               onKeyDown={handleClick}
               click={click.toString()}
             >
-              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+              <li name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
@@ -96,8 +100,8 @@ export default function Navbar() {
                   About Me
                   <span name="border"></span>
                 </Link>
-              </div>
-              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+              </li>
+              <li name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
@@ -106,8 +110,8 @@ export default function Navbar() {
                   Skills
                   <span name="border"></span>
                 </Link>
-              </div>
-              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+              </li>
+              <li name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
@@ -116,7 +120,7 @@ export default function Navbar() {
                   Projects
                   <span name="border"></span>
                 </Link>
-              </div>
+              </li>
               {/*<div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
@@ -127,7 +131,7 @@ export default function Navbar() {
                   <span name="border"></span>
                 </Link>
               </div> */}
-              <div name="navItem" className={`w-full lg:w-auto lg:h-20`}>
+              <li name="navItem" className={`w-full lg:w-auto lg:h-20`}>
                 <Link
                   name="navLinks"
                   className={`nav-link lg:nav-link-lg`}
@@ -136,7 +140,7 @@ export default function Navbar() {
                   Contact
                   <span name="border"></span>
                 </Link>
-              </div>
+              </li>
             </ul>
           </div>
         </nav>

@@ -7,6 +7,7 @@ featuredImage: ./full_app.png
 github: https://github.com/angel208/arpeggio-practice-tool
 url: https://arpeggio-practice-tool.vercel.app/
 tags: ["React", "NextJS", "ChakraUI", "JavaScript", "Howl JS", "MIDI", "Zustand", "Music Theory"]
+hidden: false
 ---
 
 [**Arpeggio Practice Tool**](https://arpeggio-practice-tool.vercel.app/) is a NextJS web app created to help in the arpeggio learning and practice process on the guitar. An *arpeggio* is a broken chord, or a chord in which individual notes are struck one by one, rather than all together at once. As there are many types of chords there are many arpeggios, therefore, when learning arpeggios on the guitar you must know which notes compose the chords and where to play them. This usually takes a lot of practice.

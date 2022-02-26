@@ -4,6 +4,7 @@ date: "2019-05-04"
 title: "Nova Watches"
 description: "Ecommerce made in Woocommerce"
 featuredImage: ./featured.jpg
+hidden: true
 ---
 
 # Hic est manus fata marito constitit erit
