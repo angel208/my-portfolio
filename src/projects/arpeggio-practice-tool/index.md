@@ -24,7 +24,7 @@ Lastly, you can configure the player to play all the notes sequentially (as an a
 
 ###Chord Filters
 
-The app has a filter's section that allows the user to select the chords that can be randomly played, based on chord types (major, minor, dominant or diminished) and if flat chords are allowed. It also has filters regarding which finger and string should the arpeggios start in when being displayed in the fretboard diagram. The user can even modify the chord list by toggling chords individually.
+The app has a **filter's section** that allows the user to select the chords that can be randomly played, based on chord types (major, minor, dominant or diminished) and if flat chords are allowed. It also has filters regarding which finger and string should the arpeggios start in when being displayed in the fretboard diagram. The user can even modify the chord list by toggling chords individually.
 
 ![Filter Section](./filters.png)
 

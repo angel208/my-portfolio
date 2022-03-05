@@ -5,14 +5,14 @@ title: "Nova Drive"
 description: "Cloud based drive made in python with AWS"
 featuredImage: ./nova-logo-bg_auto_x2.jpg
 github: https://github.com/angel208/Nova-Drive
-tags: ["Python", "Back-end", "AWS", "S3", "Flask", "Pytest","API Rest", "Marshmallow"]
+tags: ["Python", "Back-end", "AWS", "S3", "JWT" "Flask", "Pytest","API Rest", "Marshmallow"]
 hidden: false
 ---
 
 
-**Nova Drive** is a cloud-based drive made in python. The app consists of an API REST that allows you to store files either in a local file directory or in an AWS S3 bucket. You just need to configure where do you want to store the files and start the service, after that, you will be ready to go.
+**Nova Drive** is a cloud-based drive made in **python**. The app consists of an API REST that allows you to store files either in a local file directory or in an AWS S3 bucket. You just need to configure where do you want to store the files and start the service, after that, you will be ready to go.
   
- This first version of the app includes all the basic file manipulation functionalities and user authentication and authorization.  
+This first version of the app includes all the basic file manipulation functionalities and user authentication and authorization.  
 
 
 ###REST API
@@ -21,14 +21,14 @@ You can access your files through the API Rest of the application. After the ser
 
 The rest methods are designed with best practices in mind, and although the API is not 100% RESTful, it draws ideas from the REST APIs of the biggest drive solutions in the market.
 
-All the endpoints are secured using JWT, so the users have access only to its files (and in a future version of the app, the files that are shared with it). Last but not least, the structure of the data that you provide to the endpoints is fully validated, so if a call is missing a field or is not correctly formatted, an HTTP error is thrown accompanied by a message telling you the incorrect field.
+All the endpoints are secured using **JWT** (Json Web Tokens), so the users have access only to its files (and in a future version of the app, the files that are shared with it). Last but not least, the structure of the data that you provide to the endpoints is fully validated, so if a call is missing a field or is not correctly formatted, an HTTP error is thrown accompanied by a message telling you the incorrect field.
 
 ![Data verification](./data_verification_capture.png)
 
 ###Storage options
 
 
-The app can be configured to store the files in a directory inside the local file system or in a previously created AWS S3 Bucket. This configuration is made just by changing a few parameters in the config file. 
+The app can be configured to store the files in a directory inside the **local file system** or in a previously created AWS **S3 Bucket**. This configuration is made just by changing a few parameters in the config file. 
 
 
 Even though the local file system and an S3 buckets are the only options available in version 1 of the app, the code is built  in a way that abstracts where is it getting the files from. This means that adding another storage option is possible without touching the app's codebase. 
@@ -51,13 +51,13 @@ Nova cloud uses the second approach to facilitate the integration with other sto
 ###Automated testing & logging
 
 
-Because Nova Drive is designed like an open-source project, a test-driven development was used in its construction. Integration and unitary test are included in the repository, hoping that it will help others in the process of further developing the app.
+Because Nova Drive is designed like an open-source project, a **test-driven development** was used in its construction. Integration and unitary test are included in the repository, hoping that it will help others in the process of further developing the app.
 
 With the same goal in mind, extensive logging is configured inside the app. The logs are separated for API call trace and code execution trace.
 
 ###Docs
 
-As a REST-based app, each method's body, response structure, and possible HTTP responses is documented using Swagger, with the definition of this documentation being inside the code of each method's controller. This allows not only to give the users of this API all the information needed to fully utilize it, but also give the developers working on Nova Drive documentation inside the code.
+As a REST-based app, each method's body, response structure, and possible HTTP responses is documented using **Swagger**, with the definition of this documentation being inside the code of each method's controller. This allows not only to give the users of this API all the information needed to fully utilize it, but also give the developers working on Nova Drive documentation inside the code.
 
 ![API Docs](./docs_capture2.png)  
 
@@ -74,6 +74,8 @@ As a REST-based app, each method's body, response structure, and possible HTTP r
 - Pytest -([https://docs.pytest.org/en/6.2.x/](https://docs.pytest.org/en/6.2.x/))
 
 - Pillow - ([https://python-pillow.org/](https://python-pillow.org/))
+
+- Swagger - ([https://swagger.io/](https://swagger.io/))
 
 
 Nova Drive is made in **Python**. The REST API is developed using **Flask**, a lightweight framework to handle the construction of HTTP-based apps. To make the method definition a little more structured inside the code, the library **Flask-restx** is used. This library is a Flask wrapper that comes with handy functionalities and a structure to define REST methods.  

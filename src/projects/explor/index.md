@@ -2,7 +2,7 @@
 slug: "/projects/explor"
 date: "2020-05-04"
 title: "Explor"
-description: "Travel site made in gatsby"
+description: "Travel site made in GatsbyJS"
 featuredImage: ./Explor1.png
 github: https://github.com/angel208/Explor
 tags: ["React", "Gastby", "GraphQL", "Portfolio", "HTML", "CSS"]
