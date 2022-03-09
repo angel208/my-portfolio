@@ -34,9 +34,9 @@ export default function About() {
           About me
         </h1>
         <p className=" text-secondary-text  text-center lg:text-left lg:text-lg">
-          I am a detail driven software engineer, focused on the development of
+          I am a detail-driven software engineer, focused on the development of
           maintainable solutions, with experience in cloud architecture,
-          Atlassian tools implantation and maintenance and software development.
+          Atlassian tools implantation and maintenance, and software development.
         </p>
         <div className="mt-8 lg:mt-8">
           <a href={CVFile} download>

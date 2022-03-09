@@ -5,7 +5,7 @@ title: "Nova Drive"
 description: "Cloud based drive made in python with AWS"
 featuredImage: ./nova-logo-bg_auto_x2.jpg
 github: https://github.com/angel208/Nova-Drive
-tags: ["Python", "Back-end", "AWS", "S3", "JWT" "Flask", "Pytest","API Rest", "Marshmallow"]
+tags: ["Python", "Back-end", "AWS", "S3", "JWT", "Flask", "Pytest","API Rest", "Marshmallow"]
 hidden: false
 ---
 
